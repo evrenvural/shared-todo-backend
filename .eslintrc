@@ -1,0 +1,15 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "node/no-unsupported-features/es-syntax": 0,
+    "import/prefer-default-export": 0,
+    "no-console": 0,
+    "array-callback-return": 0,
+    "consistent-return": 0
+  }
+}
