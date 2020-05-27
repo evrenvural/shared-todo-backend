@@ -1,8 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
-import './src/model/todo';
-
+import './src/model';
 import { connectWithDatabase } from './config';
 import routes from './src/route';
 
