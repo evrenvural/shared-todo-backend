@@ -1,2 +1,2 @@
 # expressjs-mongodb-starter
-This is starter pack for NodeJS.
+This is starter project for NodeJS.
