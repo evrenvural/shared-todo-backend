@@ -1,2 +1,2 @@
-# expressjs-mongodb-starter
-This is starter project for NodeJS.
+# Shared Todo Backend
+This repository is shared todo app's backend.
