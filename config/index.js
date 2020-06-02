@@ -5,7 +5,7 @@ export function connectWithDatabase() {
   const password = '1';
 
   mongoose.connect(
-    `mongodb+srv://${username}:${password}@cluster0-w410h.mongodb.net/test?retryWrites=true&w=majority/todoDB`,
+    `mongodb+srv://${username}:${password}@cluster0-w410h.mongodb.net/test?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true },
     error => {
       if (error) {
