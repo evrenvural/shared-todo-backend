@@ -8,6 +8,7 @@ const router = Router();
 const User = model(schemaName.USER);
 
 // Functions
+
 /**
  * GET request to get user
  *

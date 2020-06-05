@@ -53,18 +53,18 @@ async function addTodoList(req, res) {
 
   try {
     const user = await User.findById(userId);
-    const { id } = await TodoList.findOne({ code });
+    const todoList = await TodoList.findOne({ code });
 
-    if (user.todoLists.includes(id)) {
+    if (user.todoLists.includes(todoList.id)) {
       res.status(403).send({ error: 'This todo list has already been added.' });
       return;
     }
 
-    user.todoLists.push(id);
+    user.todoLists.push(todoList);
 
     await user.save();
 
-    res.status(200).send(id);
+    res.status(200).send(todoList);
   } catch (err) {
     res.status(400).send(err);
   }

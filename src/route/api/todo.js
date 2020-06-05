@@ -9,6 +9,7 @@ const Todo = model(schemaName.TODO);
 const TodoList = model(schemaName.TODO_LIST);
 
 // Functions
+
 /**
  * PUT request to add todo to todoList
  * @params todoListId
