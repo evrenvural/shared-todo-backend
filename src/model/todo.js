@@ -1,9 +1,12 @@
 import mongoose, { Schema } from 'mongoose';
+
 import schemaName from './util';
 
-const todo = Schema({
+const Todo = Schema({
   isChecked: { type: Boolean, default: false },
   text: { type: String, required: true }
 });
 
-mongoose.model(schemaName.TODO, todo);
+mongoose.model(schemaName.TODO, Todo);
+
+export default Todo;

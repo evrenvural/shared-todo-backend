@@ -9,7 +9,7 @@ export function connectWithDatabase() {
     { useNewUrlParser: true, useUnifiedTopology: true },
     error => {
       if (error) {
-        console.error('Connection error!');
+        console.error('Connection error! -> ', error.message);
       } else {
         console.log('Connected with database');
       }

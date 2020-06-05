@@ -11,7 +11,7 @@ const TodoList = model(schemaName.TODO_LIST);
 // Functions
 /**
  * POST request to create new todoList
- *
+ * @params userId
  * @body title: String
  * @return createdTodoList: TodoList
  */
@@ -24,13 +24,14 @@ async function createTodoList(req, res) {
     const user = await User.findById(userId);
     const generatedCode = await generateUniqueCode(TodoList);
     const createdTodoList = new TodoList({
-      userId: userId,
       title: title,
       createdBy: user.name,
       code: generatedCode
     });
 
-    user.todoList.push(createdTodoList);
+    user.todoLists.push(createdTodoList);
+
+    await createdTodoList.save();
     await user.save();
 
     res.status(201).send(createdTodoList);
