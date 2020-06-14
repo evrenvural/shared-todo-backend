@@ -41,7 +41,7 @@ function createUser(req, res) {
 }
 
 // Routes
-router.get('/:userId/get', getUser);
-router.post('/create', createUser);
+router.get('/:userId', getUser);
+router.post('', createUser);
 
 export default router;

@@ -5,8 +5,8 @@ import { todo, user, todoList } from './api';
 const router = Router();
 
 // Routes
-router.use('/user', user);
-router.use('/todo', todo);
-router.use('/todoList', todoList);
+router.use('/users', user);
+router.use('/todos', todo);
+router.use('/todoLists', todoList);
 
 export default router;

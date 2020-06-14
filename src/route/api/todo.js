@@ -33,6 +33,6 @@ async function createTodo(req, res) {
   }
 }
 
-router.put('/:todoListId/create', createTodo);
+router.put('/:todoListId', createTodo);
 
 export default router;

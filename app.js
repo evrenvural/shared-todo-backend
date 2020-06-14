@@ -9,6 +9,7 @@ const app = express();
 
 connectWithDatabase();
 
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/', routes);
 

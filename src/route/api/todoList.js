@@ -71,7 +71,7 @@ async function addTodoList(req, res) {
 }
 
 // Routes
-router.post('/:userId/create', createTodoList);
-router.put('/:userId/addTodoList', addTodoList);
+router.post('/:userId', createTodoList);
+router.put('/:userId/add', addTodoList);
 
 export default router;
