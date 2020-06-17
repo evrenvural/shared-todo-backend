@@ -11,7 +11,7 @@ const TodoList = model(schemaName.TODO_LIST);
 // Functions
 
 /**
- * PUT request to add todo to todoList
+ * POST request to add todo to todoList
  * @params todoListId
  * @body text: String
  * @return addedTodo: Todo
@@ -33,6 +33,6 @@ async function createTodo(req, res) {
   }
 }
 
-router.put('/:todoListId', createTodo);
+router.post('/:todoListId', createTodo);
 
 export default router;

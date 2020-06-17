@@ -7,6 +7,6 @@ const router = Router();
 // Routes
 router.use('/users', user);
 router.use('/todos', todo);
-router.use('/todoLists', todoList);
+router.use('/todo-lists', todoList);
 
 export default router;
